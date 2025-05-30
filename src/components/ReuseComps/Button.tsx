@@ -4,7 +4,7 @@ import * as RemixIcon from "remixicon-react";
 interface ButtonProps {
   style?: string;
   content: string;
-  icon?: keyof typeof RemixIcon; // Only valid icon names
+  icon?: keyof typeof RemixIcon;
   iconPosition?: "left" | "right";
 }
 
@@ -14,7 +14,8 @@ const Button: React.FC<ButtonProps> = ({
   icon,
   iconPosition = "left",
 }) => {
-  const IconComponent = icon ? RemixIcon[icon] : null;
+  const RemixIcons = RemixIcon as Record<string, React.ElementType>;
+  const IconComponent = icon ? RemixIcons[icon] : null;
 
   return (
     <button className={`flex items-center gap-2 ${style} px-4 py-2 rounded-md`}>

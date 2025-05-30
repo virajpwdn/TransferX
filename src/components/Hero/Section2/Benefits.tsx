@@ -5,7 +5,7 @@ import { data } from "@/utils/constants";
 import Card from "./Card";
 
 const Benefits = () => {
-  const [cardData, setCardData] = useState(data);
+  const [cardData] = useState(data);
   return (
     <section className="py-52 flex gap-5 lg:items-center max-lg:flex-col">
       <div className="left flex-1">

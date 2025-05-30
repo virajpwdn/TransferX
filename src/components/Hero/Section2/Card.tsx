@@ -1,10 +1,15 @@
+import { LucideIcon } from "lucide-react";
 import React from "react";
 
-interface CardDataProps {
+interface CardData {
   id: number;
   title: string;
   text: string;
-//   icon: 
+  icon: LucideIcon;
+}
+
+interface CardDataProps {
+    data: CardData
 }
 
 const Card: React.FC<CardDataProps> = (elem) => {

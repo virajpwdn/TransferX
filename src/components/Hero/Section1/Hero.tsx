@@ -1,6 +1,5 @@
 import React from "react";
 import Discounts from "./Discounts";
-import Button from "../../ReuseComps/Button";
 import Image from "next/image";
 
 const Hero = () => {

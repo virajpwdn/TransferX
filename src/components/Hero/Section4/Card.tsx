@@ -1,5 +1,4 @@
 import React from 'react'
-import { features } from '@/utils/constants';
 
 const Card = () => {
   return (

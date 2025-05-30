@@ -3,9 +3,9 @@ import React from "react";
 interface PriceData {
   id: number;
   type: string;
-  duration: number | null;
+  duration?: number | null;
   rs: string;
-  ogRs: string;
+  ogRs?: string;
   features: string[];
 }
 
